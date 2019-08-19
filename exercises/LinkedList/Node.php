@@ -10,6 +10,14 @@ namespace Exercises\LinkedList;
  * @property mixed $data
  * @property self|null $next default is null when Node is not provided
  */
-final class Node
+
+final class NodeComplete
 {
+    public $next;
+    public $data;
+    public function __construct($data, ?self $next = null)
+    {
+        $this->data = $data;
+        $this->next = $next;
+    }
 }
